@@ -24,11 +24,15 @@
 	  'https://connect.facebook.net/en_US/fbevents.js');
 	  fbq('init', '908907506134654');
 	  fbq('track', 'PageView');
+		fbq('track', 'ViewContent', {
+	    content_ids: 'about',
+	  });
 	</script>
+
 	<noscript><img height="1" width="1" style="display:none"
 	  src="https://www.facebook.com/tr?id=908907506134654&ev=PageView&noscript=1"
 	/></noscript>
-	<!-- End Facebook Pixel Code -->	
+	<!-- End Facebook Pixel Code -->
 </head>
 
 <body id="page-about" class="page-about animated-home">
