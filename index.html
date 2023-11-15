@@ -1,801 +1,626 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <title>픽소 (PIXO)</title>
-    <!-- =================== META =================== -->
-    <meta
-      name="description"
-      content="We Build Apps for Creativity and Productivity"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="naver-site-verification"
-      content="08741db084595baec39cd30758706629de9b45c4"
-    />
-    <meta
-      name="keywords"
-      content="픽소, iOS, iPhone, App, mobile, developer, designer, creativity, productivity, photo, graphic, UI, UX, startup, media, entrepreneur, pixo, 스타트업, 모바일, 개발자, 디자이너"
-    />
-    <meta name="author" content="픽소 (PIXO)" />
-    <meta
-      property="og:image"
-      content="https://www.pixo.co/assets/img/pixo_logo.png"
-    />
-    <meta property="og:url" content="http://pixo.co" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="PIXO Inc." />
-    <meta
-      property="og:description"
-      content="We Build Apps for Creativity and Productivity"
-    />
 
-    <meta name="twitter:title" content="PIXO" />
-    <meta
-      name="twitter:description"
-      content="We Build Apps for Creativity and Productivity"
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.pixo.co/assets/img/pixo_logo.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="naver-site-verification"
-      content="08741db084595baec39cd30758706629de9b45c4"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <title>픽소 (PIXO)</title>
+  <!-- =================== META =================== -->
+  <meta name="description" content="We Build Apps for Creativity and Productivity" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="naver-site-verification" content="08741db084595baec39cd30758706629de9b45c4" />
+  <meta name="keywords"
+    content="픽소, iOS, iPhone, App, mobile, developer, designer, creativity, productivity, photo, graphic, UI, UX, startup, media, entrepreneur, pixo, 스타트업, 모바일, 개발자, 디자이너" />
+  <meta name="author" content="픽소 (PIXO)" />
+  <meta property="og:image" content="https://www.pixo.co/assets/img/pixo_logo.png" />
+  <meta property="og:url" content="http://pixo.co" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PIXO Inc." />
+  <meta property="og:description" content="We Build Apps for Creativity and Productivity" />
 
-    <link rel="shortcut icon" href="assets/img/favicon.png" />
-    <!-- =================== STYLE =================== -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "908907506134654");
-      fbq("track", "PageView");
-      fbq("track", "ViewContent", {
-        content_ids: "main",
-      });
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=908907506134654&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-146761508-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-146761508-1");
-    </script>
-    <script>
-      console.group("%c안녕하세요! 🙋", "font-size: 18px");
+  <meta name="twitter:title" content="PIXO" />
+  <meta name="twitter:description" content="We Build Apps for Creativity and Productivity" />
+  <meta name="twitter:image" content="https://www.pixo.co/assets/img/pixo_logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="naver-site-verification" content="08741db084595baec39cd30758706629de9b45c4" />
 
-      console.log(
-        "%c픽소에서 일하고 싶으신가요? http://bit.ly/pixoteam 을(를) 확인해 보세요.",
-        "font-size: 18px"
-      );
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <!-- =================== STYLE =================== -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "908907506134654");
+    fbq("track", "PageView");
+    fbq("track", "ViewContent", {
+      content_ids: "main",
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display: none"
+      src="https://www.facebook.com/tr?id=908907506134654&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146761508-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-146761508-1");
+  </script>
+  <script>
+    console.group("%c안녕하세요! 🙋", "font-size: 18px");
 
-      console.groupEnd();
-    </script>
-  </head>
+    console.log(
+      "%c픽소에서 일하고 싶으신가요? http://bit.ly/pixoteam 을(를) 확인해 보세요.",
+      "font-size: 18px"
+    );
 
-  <body id="home" class="animated-home">
-    <!-- ================= HEADER ================= -->
-    <header class="header wow fadeInDown" data-wow-duration=".8s">
-      <div href="#" class="nav-btn">
-        <span></span>
-        <span></span>
+    console.groupEnd();
+  </script>
+</head>
+
+<body id="home" class="animated-home">
+  <!-- ================= HEADER ================= -->
+  <header class="header wow fadeInDown" data-wow-duration=".8s">
+    <div href="#" class="nav-btn">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="container">
+      <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="logo" /></a>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="http://bit.ly/pixoteam" target="_blank">Career</a></li>
+        </ul>
+        <a class="nav-email" href="mailto:contact@pixo.co">contact@pixo.co</a>
+      </nav>
+    </div>
+  </header>
+  <!-- =============== HEADER END =============== -->
+
+  <main>
+    <img class="img-bg-top" src="assets/img/bg-home-top.svg" alt="img" />
+    <div class="main-container container">
+      <div class="main-row">
+        <div class="main-left">
+          <div>
+            <!-- <h1><span class="wow fadeRightText" data-wow-duration=".8s">We Build Apps for </span><span class="wow fadeRightText" data-wow-duration=".8s" data-wow-delay=".08s">Creativity and </span><span class="wow fadeRightText" data-wow-duration=".8s" data-wow-delay=".11s">Productivity</span></h1> -->
+            <h1>
+              <span class="wow fadeRightText" data-wow-duration=".8s">Make Design </span><span class="wow fadeRightText"
+                data-wow-duration=".8s" data-wow-delay=".08s">Fun, Easy, and </span><span class="wow fadeRightText"
+                data-wow-duration=".8s" data-wow-delay=".11s">Accessible to All</span>
+            </h1>
+          </div>
+        </div>
+        <img class="img-ship" src="assets/img/ship.svg" alt="img" />
       </div>
+    </div>
+    <!-- s-appstore-featured -->
+    <div class="s-appstore-featured">
       <div class="container">
-        <a href="index.html" class="logo"
-          ><img src="assets/img/logo.svg" alt="logo"
-        /></a>
-        <nav class="nav-menu">
-          <ul class="nav-list">
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="http://bit.ly/pixoteam" target="_blank">Career</a></li>
-          </ul>
-          <a class="nav-email" href="mailto:contact@pixo.co">contact@pixo.co</a>
-        </nav>
-      </div>
-    </header>
-    <!-- =============== HEADER END =============== -->
-
-    <main>
-      <img class="img-bg-top" src="assets/img/bg-home-top.svg" alt="img" />
-      <div class="main-container container">
-        <div class="main-row">
-          <div class="main-left">
-            <div>
-              <!-- <h1><span class="wow fadeRightText" data-wow-duration=".8s">We Build Apps for </span><span class="wow fadeRightText" data-wow-duration=".8s" data-wow-delay=".08s">Creativity and </span><span class="wow fadeRightText" data-wow-duration=".8s" data-wow-delay=".11s">Productivity</span></h1> -->
-              <h1>
-                <span class="wow fadeRightText" data-wow-duration=".8s"
-                  >Make Design </span
-                ><span
-                  class="wow fadeRightText"
-                  data-wow-duration=".8s"
-                  data-wow-delay=".08s"
-                  >Fun, Easy, and </span
-                ><span
-                  class="wow fadeRightText"
-                  data-wow-duration=".8s"
-                  data-wow-delay=".11s"
-                  >Accessible to All</span
-                >
-              </h1>
+        <div class="featured-cover">
+          <div class="featured-item wow fadeInUpFeatured" data-wow-duration="1s">
+            <div class="featured-img">
+              <img src="assets/img/icon-1.svg" alt="img" />
+            </div>
+            <div class="featured-info">
+              <div class="appstore-icon">
+                <img src="assets/img/appstore-icon.svg" alt="img" />
+              </div>
+              <h6>7 M</h6>
+              <p>Downloaded</p>
             </div>
           </div>
-          <img class="img-ship" src="assets/img/ship.svg" alt="img" />
+          <div class="featured-item wow fadeInUpFeatured" data-wow-duration="1s" data-wow-delay=".12s">
+            <div class="featured-img">
+              <img src="assets/img/icon-5.svg" alt="img" />
+            </div>
+            <div class="featured-info">
+              <div class="appstore-icon">
+                <img src="assets/img/appstore-icon.svg" alt="img" />
+              </div>
+              <h6>4 M</h6>
+              <p>Downloaded</p>
+            </div>
+          </div>
+          <div class="featured-item wow fadeInUpFeatured" data-wow-duration="1s" data-wow-delay=".19s">
+            <div class="featured-img">
+              <img src="assets/img/icon-4.svg" alt="img" />
+            </div>
+            <div class="featured-info">
+              <div class="appstore-icon">
+                <img src="assets/img/appstore-icon.svg" alt="img" />
+              </div>
+              <h6>3 M</h6>
+              <p>Downloaded</p>
+            </div>
+          </div>
+          <div class="featured-item wow fadeInUpFeatured" data-wow-duration="1s" data-wow-delay=".28s">
+            <div class="featured-img">
+              <img src="assets/img/icon-2.svg" alt="img" />
+            </div>
+            <div class="featured-info">
+              <div class="appstore-icon">
+                <img src="assets/img/appstore-icon.svg" alt="img" />
+              </div>
+              <h6>1 M</h6>
+              <p>Downloaded</p>
+            </div>
+          </div>
+          <div class="featured-item wow fadeInUpFeatured" data-wow-duration="1s" data-wow-delay=".24s">
+            <div class="featured-img">
+              <img src="assets/img/icon-3.svg" alt="img" />
+            </div>
+            <div class="featured-info">
+              <div class="appstore-icon">
+                <img src="assets/img/appstore-icon.svg" alt="img" />
+              </div>
+              <h6>Featured</h6>
+              <p>136 Countires</p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- s-appstore-featured -->
-      <div class="s-appstore-featured">
-        <div class="container">
-          <div class="featured-cover">
-            <div
-              class="featured-item wow fadeInUpFeatured"
-              data-wow-duration="1s"
-            >
-              <div class="featured-img">
+    </div>
+  </main>
+
+  <!-- s-slider-home -->
+  <section class="s-slider-home">
+    <div class="container">
+      <div class="slider-home">
+        <div class="slide-home">
+          <div class="slide-home-item">
+            <div class="slide-home-img">
+              <img data-lazy="assets/img/slider-img-3.png" alt="img" />
+            </div>
+            <div class="slide-home-info">
+              <div class="slider-icon">
                 <img src="assets/img/icon-1.svg" alt="img" />
               </div>
-              <div class="featured-info">
-                <div class="appstore-icon">
-                  <img src="assets/img/appstore-icon.svg" alt="img" />
-                </div>
-                <h6>7 M</h6>
-                <p>Downloaded</p>
-              </div>
+              <h2>Logo Shop</h2>
+              <p>
+                비 디자이너를 위한 쉽고 강력한 로고 디자인 앱 로고샵. 전문가가
+                디자인한 템플릿 중 하나를 선택하고 원하는 텍스트를 입력하는 것
+                만으로도 나만의 브랜드를 프로페셔널하게 디자인할 수 있습니다.
+              </p>
+              <a href="https://logoshop.co" target="_blank" class="btn btn-gray btn-logo-shop">See more</a>
             </div>
-            <div
-              class="featured-item wow fadeInUpFeatured"
-              data-wow-duration="1s"
-              data-wow-delay=".12s"
-            >
-              <div class="featured-img">
+          </div>
+        </div>
+        <div class="slide-home">
+          <div class="slide-home-item">
+            <div class="slide-home-img">
+              <img data-lazy="assets/img/slider-img-2.png" alt="img" />
+            </div>
+            <div class="slide-home-info">
+              <div class="slider-icon">
                 <img src="assets/img/icon-5.svg" alt="img" />
               </div>
-              <div class="featured-info">
-                <div class="appstore-icon">
-                  <img src="assets/img/appstore-icon.svg" alt="img" />
-                </div>
-                <h6>4 M</h6>
-                <p>Downloaded</p>
-              </div>
+              <h2>Baby Story</h2>
+              <p>
+                임신, 출산, 아기가 쑥쑥 커가는 소중한 하루 하루의 과정을
+                의미있게 남길 수 있도록 도와주는 앱 베이비스토리. 아기자기한
+                스티커로 아기의 성장을 기록할 수 있습니다.
+              </p>
+              <a href="https://www.babystoryapp.com" target="_blank" class="btn btn-gray btn-baby-story">See more</a>
             </div>
-            <div
-              class="featured-item wow fadeInUpFeatured"
-              data-wow-duration="1s"
-              data-wow-delay=".19s"
-            >
-              <div class="featured-img">
+          </div>
+        </div>
+        <div class="slide-home">
+          <div class="slide-home-item">
+            <div class="slide-home-img">
+              <img data-lazy="assets/img/slider-img-1.png" alt="img" />
+            </div>
+            <div class="slide-home-info">
+              <div class="slider-icon">
                 <img src="assets/img/icon-4.svg" alt="img" />
               </div>
-              <div class="featured-info">
-                <div class="appstore-icon">
-                  <img src="assets/img/appstore-icon.svg" alt="img" />
-                </div>
-                <h6>3 M</h6>
-                <p>Downloaded</p>
-              </div>
+              <h2>Focus Keeper</h2>
+              <p>
+                집중하는 시간과 휴식을 취하는 패턴을 반복하며 집중력을 오랜
+                시간 유지시키도록 도와주는 앱 서비스 입니다.
+              </p>
+              <a href="https://apps.apple.com/us/app/focus-keeper-pro/id830466924" target="_blank"
+                class="btn btn-gray btn-focus-keeper">See more</a>
             </div>
-            <div
-              class="featured-item wow fadeInUpFeatured"
-              data-wow-duration="1s"
-              data-wow-delay=".28s"
-            >
-              <div class="featured-img">
-                <img src="assets/img/icon-2.svg" alt="img" />
-              </div>
-              <div class="featured-info">
-                <div class="appstore-icon">
-                  <img src="assets/img/appstore-icon.svg" alt="img" />
-                </div>
-                <h6>1 M</h6>
-                <p>Downloaded</p>
-              </div>
+          </div>
+        </div>
+        <div class="slide-home">
+          <div class="slide-home-item">
+            <div class="slide-home-img">
+              <img data-lazy="assets/img/slider-img-4.png" alt="img" />
             </div>
-            <div
-              class="featured-item wow fadeInUpFeatured"
-              data-wow-duration="1s"
-              data-wow-delay=".24s"
-            >
-              <div class="featured-img">
+            <div class="slide-home-info">
+              <div class="slider-icon">
                 <img src="assets/img/icon-3.svg" alt="img" />
               </div>
-              <div class="featured-info">
-                <div class="appstore-icon">
-                  <img src="assets/img/appstore-icon.svg" alt="img" />
-                </div>
-                <h6>Featured</h6>
-                <p>136 Countires</p>
+              <h2>Sleeptune</h2>
+              <p>
+                아기의 잠이 쉽게 들도록 도와주는 슬립툰은, 원하는 아기의
+                나이에 맞춰 사운드를 추천해 주는 기능을 제공하며 다양한 종류의
+                백색 소음을 큐레이팅 해 줍니다.
+              </p>
+              <a href="https://sleeptune.co" target="_blank" class="btn btn-gray btn-sleeptune">See more</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-home">
+          <div class="slide-home-item">
+            <div class="slide-home-img">
+              <img data-lazy="assets/img/slider-img-5.png" alt="img" />
+            </div>
+            <div class="slide-home-info">
+              <div class="slider-icon">
+                <img src="assets/img/icon-2.svg" alt="img" />
               </div>
+              <h2>Shift Days</h2>
+              <p>
+                교대근무자의 일정을 손쉽게 관리할 수 있도록 도와주는 캘린더 앱
+                입니다.
+              </p>
+              <a href="https://apps.apple.com/app/shift-days/id1016565262" target="_blank"
+                class="btn btn-gray btn-shift-days">See more</a>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </section>
 
-    <!-- s-slider-home -->
-    <section class="s-slider-home">
-      <div class="container">
-        <div class="slider-home">
-          <div class="slide-home">
-            <div class="slide-home-item">
-              <div class="slide-home-img">
-                <img data-lazy="assets/img/slider-img-3.png" alt="img" />
-              </div>
-              <div class="slide-home-info">
-                <div class="slider-icon">
-                  <img src="assets/img/icon-1.svg" alt="img" />
-                </div>
-                <h2>Logo Shop</h2>
-                <p>
-                  비 디자이너를 위한 쉽고 강력한 로고 디자인 앱 로고샵. 전문가가
-                  디자인한 템플릿 중 하나를 선택하고 원하는 텍스트를 입력하는 것
-                  만으로도 나만의 브랜드를 프로페셔널하게 디자인할 수 있습니다.
-                </p>
-                <a
-                  href="https://www.logomakershop.com"
-                  target="_blank"
-                  class="btn btn-gray btn-logo-shop"
-                  >See more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="slide-home">
-            <div class="slide-home-item">
-              <div class="slide-home-img">
-                <img data-lazy="assets/img/slider-img-2.png" alt="img" />
-              </div>
-              <div class="slide-home-info">
-                <div class="slider-icon">
-                  <img src="assets/img/icon-5.svg" alt="img" />
-                </div>
-                <h2>Baby Story</h2>
-                <p>
-                  임신, 출산, 아기가 쑥쑥 커가는 소중한 하루 하루의 과정을
-                  의미있게 남길 수 있도록 도와주는 앱 베이비스토리. 아기자기한
-                  스티커로 아기의 성장을 기록할 수 있습니다.
-                </p>
-                <a
-                  href="https://www.babystoryapp.com"
-                  target="_blank"
-                  class="btn btn-gray btn-baby-story"
-                  >See more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="slide-home">
-            <div class="slide-home-item">
-              <div class="slide-home-img">
-                <img data-lazy="assets/img/slider-img-1.png" alt="img" />
-              </div>
-              <div class="slide-home-info">
-                <div class="slider-icon">
-                  <img src="assets/img/icon-4.svg" alt="img" />
-                </div>
-                <h2>Focus Keeper</h2>
-                <p>
-                  집중하는 시간과 휴식을 취하는 패턴을 반복하며 집중력을 오랜
-                  시간 유지시키도록 도와주는 앱 서비스 입니다.
-                </p>
-                <a
-                  href="https://apps.apple.com/us/app/focus-keeper-pro/id830466924"
-                  target="_blank"
-                  class="btn btn-gray btn-focus-keeper"
-                  >See more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="slide-home">
-            <div class="slide-home-item">
-              <div class="slide-home-img">
-                <img data-lazy="assets/img/slider-img-4.png" alt="img" />
-              </div>
-              <div class="slide-home-info">
-                <div class="slider-icon">
-                  <img src="assets/img/icon-3.svg" alt="img" />
-                </div>
-                <h2>Sleeptune</h2>
-                <p>
-                  아기의 잠이 쉽게 들도록 도와주는 슬립툰은, 원하는 아기의
-                  나이에 맞춰 사운드를 추천해 주는 기능을 제공하며 다양한 종류의
-                  백색 소음을 큐레이팅 해 줍니다.
-                </p>
-                <a
-                  href="https://sleeptune.co"
-                  target="_blank"
-                  class="btn btn-gray btn-sleeptune"
-                  >See more</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="slide-home">
-            <div class="slide-home-item">
-              <div class="slide-home-img">
-                <img data-lazy="assets/img/slider-img-5.png" alt="img" />
-              </div>
-              <div class="slide-home-info">
-                <div class="slider-icon">
-                  <img src="assets/img/icon-2.svg" alt="img" />
-                </div>
-                <h2>Shift Days</h2>
-                <p>
-                  교대근무자의 일정을 손쉽게 관리할 수 있도록 도와주는 캘린더 앱
-                  입니다.
-                </p>
-                <a
-                  href="https://apps.apple.com/app/shift-days/id1016565262"
-                  target="_blank"
-                  class="btn btn-gray btn-shift-days"
-                  >See more</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- s-working-products -->
-    <section class="s-working-products">
-      <div class="working-products-bg"></div>
-      <div class="products-diagram">
-        <img src="assets/img/diagram-img.svg" alt="img" />
-        <ul>
-          <li>2015</li>
-          <li>2016</li>
-          <li>2018</li>
-          <li>2020</li>
-          <li>2022</li>
-        </ul>
-      </div>
-      <div class="container">
-        <div class="working-products-container">
-          <div class="working-products-top">
-            <h2>
-              <span class="wow fadeRightText" data-wow-duration=".8s"
-                >Working on </span
-              ><span class="wow fadeRightText" data-wow-duration=".8s"
-                >Products used </span
-              ><span class="wow fadeRightText" data-wow-duration=".8s"
-                >by Millions</span
-              >
-            </h2>
-            <ul class="wow fadeIn" data-wow-duration="1.6s">
-              <li>Users</li>
-              <li>Revenue</li>
-            </ul>
-          </div>
-          <div class="products-bottom">
-            <div class="products-bottom-cover">
-              <div class="products-bottom-number">
-                <p class="wow fadeRightText" data-wow-duration=".8s">
-                  Total Downloads
-                </p>
-                <span class="wow fadeRightText" data-wow-duration=".8s"
-                  >15,000,000+</span
-                >
-              </div>
-              <div class="products-bottom-number">
-                <p class="wow fadeRightText" data-wow-duration=".8s">
-                  In-App Purchased
-                </p>
-                <span class="wow fadeRightText" data-wow-duration=".8s"
-                  >2.8 Million+</span
-                >
-              </div>
-            </div>
-            <!-- <p class="text wow fadeIn" data-wow-duration="1.6s">픽소의 제품들은 전 세계 유저로부터 꾸준한 사랑을 받으며 매 해 300% 성장하고 있습니다. 또한 누적 천만 다운로드 달성을 눈 앞에 두고 있습니다.</p> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Apps -->
-    <section class="s-apps">
-      <div class="container">
-        <div class="apps-container">
-          <h2 class="wow fadeRightText" data-wow-duration="1s">
-            <span>Apps </span>without Borders
+  <!-- s-working-products -->
+  <section class="s-working-products">
+    <div class="working-products-bg"></div>
+    <div class="products-diagram">
+      <img src="assets/img/diagram-img.svg" alt="img" />
+      <ul>
+        <li>2015</li>
+        <li>2016</li>
+        <li>2018</li>
+        <li>2020</li>
+        <li>2022</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="working-products-container">
+        <div class="working-products-top">
+          <h2>
+            <span class="wow fadeRightText" data-wow-duration=".8s">Working on </span><span class="wow fadeRightText"
+              data-wow-duration=".8s">Products used </span><span class="wow fadeRightText" data-wow-duration=".8s">by
+              Millions</span>
           </h2>
-          <p
-            class="text wow fadeInMap"
-            data-wow-duration="1.1s"
-            data-wow-delay=".6s"
-          >
-            픽소 제품의 90% 이상이 해외사용자로 전 세계에서 월 수십만명의
-            유저들이 픽소의 제품을 사용하고 있습니다.
-          </p>
-          <div class="apps-map-cover">
-            <img src="assets/img/world-map.png" alt="map" />
-            <ul
-              class="wow fadeInMap"
-              data-wow-duration="1.4s"
-              data-wow-delay=".5s"
-            >
-              <li class="item-red">
-                <p>North America</p>
-                <span>70.7%</span>
-              </li>
-              <li class="item-blue">
-                <p>North Europe</p>
-                <span>8.4%</span>
-              </li>
-              <li class="item-blue">
-                <p>Asia</p>
-                <span>14.5%</span>
-              </li>
-              <li class="item-blue">
-                <p>South America</p>
-                <span>1.8%</span>
-              </li>
-              <li class="item-green">
-                <p>Africa</p>
-                <span>1.6%</span>
-              </li>
-              <li class="item-green">
-                <p>Australia</p>
-                <span>3%</span>
-              </li>
-            </ul>
+          <ul class="wow fadeIn" data-wow-duration="1.6s">
+            <li>Users</li>
+            <li>Revenue</li>
+          </ul>
+        </div>
+        <div class="products-bottom">
+          <div class="products-bottom-cover">
+            <div class="products-bottom-number">
+              <p class="wow fadeRightText" data-wow-duration=".8s">
+                Total Downloads
+              </p>
+              <span class="wow fadeRightText" data-wow-duration=".8s">15,000,000+</span>
+            </div>
+            <div class="products-bottom-number">
+              <p class="wow fadeRightText" data-wow-duration=".8s">
+                In-App Purchased
+              </p>
+              <span class="wow fadeRightText" data-wow-duration=".8s">2.8 Million+</span>
+            </div>
           </div>
+          <!-- <p class="text wow fadeIn" data-wow-duration="1.6s">픽소의 제품들은 전 세계 유저로부터 꾸준한 사랑을 받으며 매 해 300% 성장하고 있습니다. 또한 누적 천만 다운로드 달성을 눈 앞에 두고 있습니다.</p> -->
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- s-review -->
-    <section class="s-review">
-      <div class="review-bg"></div>
-      <div class="container">
-        <div class="review-number">312,921+</div>
-        <h2 class="wow">Total User Reviews</h2>
-        <div class="review-rating">
-          <div class="review-rating-item">
-            <div class="star-gradient wow fadeInLeft" style="width: 91%"></div>
-            <img
-              src="assets/img/stars-big.png"
-              srcset="assets/img/stars-big-2x.png 2x"
-              alt=""
-            />
-          </div>
-        </div>
-        <span
-          class="review-rating-number wow fadeTopText"
-          data-wow-duration="1.5s"
-          >4.8 / 5.0</span
-        >
-        <p class="text">
-          제품을 만드는 과정에 있어 유저의 만족을 가장 중요하게 생각하며
-          사용성과 완성도에 집중하고 있습니다. 전 세계의 유저들로부터 매일
-          전달되는 리뷰는 우리 팀이 앞으로 나아가는 중요한 원동력입니다.
+  <!-- Apps -->
+  <section class="s-apps">
+    <div class="container">
+      <div class="apps-container">
+        <h2 class="wow fadeRightText" data-wow-duration="1s">
+          <span>Apps </span>without Borders
+        </h2>
+        <p class="text wow fadeInMap" data-wow-duration="1.1s" data-wow-delay=".6s">
+          픽소 제품의 90% 이상이 해외사용자로 전 세계에서 월 수십만명의
+          유저들이 픽소의 제품을 사용하고 있습니다.
         </p>
+        <div class="apps-map-cover">
+          <img src="assets/img/world-map.png" alt="map" />
+          <ul class="wow fadeInMap" data-wow-duration="1.4s" data-wow-delay=".5s">
+            <li class="item-red">
+              <p>North America</p>
+              <span>70.7%</span>
+            </li>
+            <li class="item-blue">
+              <p>North Europe</p>
+              <span>8.4%</span>
+            </li>
+            <li class="item-blue">
+              <p>Asia</p>
+              <span>14.5%</span>
+            </li>
+            <li class="item-blue">
+              <p>South America</p>
+              <span>1.8%</span>
+            </li>
+            <li class="item-green">
+              <p>Africa</p>
+              <span>1.6%</span>
+            </li>
+            <li class="item-green">
+              <p>Australia</p>
+              <span>3%</span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="container container-reviews-slider">
-        <div class="reviews-slider">
-          <div class="review-slide">
-            <div class="review-slide-item">
-              <h6>The only app you need for logos</h6>
-              <div class="review-slide-rating">
-                <div class="rating-stars">
-                  <div class="star-gradient" style="width: 100%"></div>
-                  <img
-                    src="assets/img/stars-bg.png"
-                    srcset="assets/img/stars-bg-2x.png 2x"
-                    alt="stars"
-                  />
-                </div>
-                <div class="review-autor">by Joel</div>
+    </div>
+  </section>
+
+  <!-- s-review -->
+  <section class="s-review">
+    <div class="review-bg"></div>
+    <div class="container">
+      <div class="review-number">312,921+</div>
+      <h2 class="wow">Total User Reviews</h2>
+      <div class="review-rating">
+        <div class="review-rating-item">
+          <div class="star-gradient wow fadeInLeft" style="width: 91%"></div>
+          <img src="assets/img/stars-big.png" srcset="assets/img/stars-big-2x.png 2x" alt="" />
+        </div>
+      </div>
+      <span class="review-rating-number wow fadeTopText" data-wow-duration="1.5s">4.8 / 5.0</span>
+      <p class="text">
+        제품을 만드는 과정에 있어 유저의 만족을 가장 중요하게 생각하며
+        사용성과 완성도에 집중하고 있습니다. 전 세계의 유저들로부터 매일
+        전달되는 리뷰는 우리 팀이 앞으로 나아가는 중요한 원동력입니다.
+      </p>
+    </div>
+    <div class="container container-reviews-slider">
+      <div class="reviews-slider">
+        <div class="review-slide">
+          <div class="review-slide-item">
+            <h6>The only app you need for logos</h6>
+            <div class="review-slide-rating">
+              <div class="rating-stars">
+                <div class="star-gradient" style="width: 100%"></div>
+                <img src="assets/img/stars-bg.png" srcset="assets/img/stars-bg-2x.png 2x" alt="stars" />
               </div>
-              <div class="review-content">
-                This is the best app I have found and I am hard to please when I
-                comes to logo apps! I found everything I needed and after a
-                small search was thrilled to find even new art for my logo I had
-                not seen or used before! Very happy!
-              </div>
+              <div class="review-autor">by Joel</div>
+            </div>
+            <div class="review-content">
+              This is the best app I have found and I am hard to please when I
+              comes to logo apps! I found everything I needed and after a
+              small search was thrilled to find even new art for my logo I had
+              not seen or used before! Very happy!
             </div>
           </div>
-          <div class="review-slide">
-            <div class="review-slide-item">
-              <h6>My favorite app everrr!</h6>
-              <div class="review-slide-rating">
-                <div class="rating-stars">
-                  <div class="star-gradient" style="width: 100%"></div>
-                  <img
-                    src="assets/img/stars-bg.png"
-                    srcset="assets/img/stars-bg-2x.png 2x"
-                    alt="stars"
-                  />
-                </div>
-                <div class="review-autor">by Maria Rose</div>
+        </div>
+        <div class="review-slide">
+          <div class="review-slide-item">
+            <h6>My favorite app everrr!</h6>
+            <div class="review-slide-rating">
+              <div class="rating-stars">
+                <div class="star-gradient" style="width: 100%"></div>
+                <img src="assets/img/stars-bg.png" srcset="assets/img/stars-bg-2x.png 2x" alt="stars" />
               </div>
-              <div class="review-content">
-                My baby's now 4 months and I have an amazing picture from every
-                month of my pregnancy and her life! Highly addicting! I'm sure
-                I'll be using this for the rest of my little ones life.
-              </div>
+              <div class="review-autor">by Maria Rose</div>
+            </div>
+            <div class="review-content">
+              My baby's now 4 months and I have an amazing picture from every
+              month of my pregnancy and her life! Highly addicting! I'm sure
+              I'll be using this for the rest of my little ones life.
             </div>
           </div>
-          <div class="review-slide">
-            <div class="review-slide-item">
-              <h6>A simple but effective app!</h6>
-              <div class="review-slide-rating">
-                <div class="rating-stars">
-                  <div class="star-gradient" style="width: 100%"></div>
-                  <img
-                    src="assets/img/stars-bg.png"
-                    srcset="assets/img/stars-bg-2x.png 2x"
-                    alt="stars"
-                  />
-                </div>
-                <div class="review-autor">by Unoe</div>
+        </div>
+        <div class="review-slide">
+          <div class="review-slide-item">
+            <h6>A simple but effective app!</h6>
+            <div class="review-slide-rating">
+              <div class="rating-stars">
+                <div class="star-gradient" style="width: 100%"></div>
+                <img src="assets/img/stars-bg.png" srcset="assets/img/stars-bg-2x.png 2x" alt="stars" />
               </div>
-              <div class="review-content">
-                This helps not only with keeping you a t your peak of attention
-                span, but also helps with the much more subtle fear that feeds
-                wandering attention and procrastination.
-              </div>
+              <div class="review-autor">by Unoe</div>
+            </div>
+            <div class="review-content">
+              This helps not only with keeping you a t your peak of attention
+              span, but also helps with the much more subtle fear that feeds
+              wandering attention and procrastination.
             </div>
           </div>
-          <div class="review-slide">
-            <div class="review-slide-item">
-              <h6>Great for health care workers</h6>
-              <div class="review-slide-rating">
-                <div class="rating-stars">
-                  <div class="star-gradient" style="width: 100%"></div>
-                  <img
-                    src="assets/img/stars-bg.png"
-                    srcset="assets/img/stars-bg-2x.png 2x"
-                    alt="stars"
-                  />
-                </div>
-                <div class="review-autor">by Charlie</div>
+        </div>
+        <div class="review-slide">
+          <div class="review-slide-item">
+            <h6>Great for health care workers</h6>
+            <div class="review-slide-rating">
+              <div class="rating-stars">
+                <div class="star-gradient" style="width: 100%"></div>
+                <img src="assets/img/stars-bg.png" srcset="assets/img/stars-bg-2x.png 2x" alt="stars" />
               </div>
-              <div class="review-content">
-                This app has allowed to plan my Whole life. I love this app and
-                would recommend it to anyone interested.
-              </div>
+              <div class="review-autor">by Charlie</div>
+            </div>
+            <div class="review-content">
+              This app has allowed to plan my Whole life. I love this app and
+              would recommend it to anyone interested.
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- s-making-apps -->
-    <section class="s-making-apps">
-      <img class="geometric-bg" src="assets/img/geometric-bg.svg" alt="bg" />
-      <div class="container">
-        <div class="making-apps-cover">
-          <div class="making-apps-left">
-            <div class="making-apps-item">
-              <span
-                class="bg-cover wow fadeInLeft"
-                data-wow-duration="1.2s"
-              ></span>
-              <h2>We Strive to Make Great Apps</h2>
-              <p class="text">
-                데이터를 기반으로 사용성을 개선하고 사용자의 목소리에 귀기울여
-                최선의 결과를 찾기 위해 끊임 없이 노력하고 있습니다. 픽소의 모든
-                프로덕트는 포지션과 관계 없이 개발자, 디자이너, 마케터 모두의
-                고민으로 기획되고 있으며, 방향을 탐색하며 하나의 솔루션을
-                고집하기보다는 다양한 관점에서 문제에 접근하고 능동적으로 누구나
-                활발하게 의견을 제시하는 문화를 추구합니다.
-              </p>
-            </div>
+  <!-- s-making-apps -->
+  <section class="s-making-apps">
+    <img class="geometric-bg" src="assets/img/geometric-bg.svg" alt="bg" />
+    <div class="container">
+      <div class="making-apps-cover">
+        <div class="making-apps-left">
+          <div class="making-apps-item">
+            <span class="bg-cover wow fadeInLeft" data-wow-duration="1.2s"></span>
+            <h2>We Strive to Make Great Apps</h2>
+            <p class="text">
+              데이터를 기반으로 사용성을 개선하고 사용자의 목소리에 귀기울여
+              최선의 결과를 찾기 위해 끊임 없이 노력하고 있습니다. 픽소의 모든
+              프로덕트는 포지션과 관계 없이 개발자, 디자이너, 마케터 모두의
+              고민으로 기획되고 있으며, 방향을 탐색하며 하나의 솔루션을
+              고집하기보다는 다양한 관점에서 문제에 접근하고 능동적으로 누구나
+              활발하게 의견을 제시하는 문화를 추구합니다.
+            </p>
           </div>
-          <div class="making-apps-right">
-            <img
-              class="wow makingInRight"
-              data-wow-duration="1.2s"
-              src="assets/img/slide-9.jpg"
-              alt="img"
-            />
+        </div>
+        <div class="making-apps-right">
+          <img class="wow makingInRight" data-wow-duration="1.2s" src="assets/img/slide-9.jpg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capability -->
+  <section class="s-capability">
+    <div class="container">
+      <div class="capability-container">
+        <h2><span>We're PIXO</span></h2>
+        <div class="capability-cover">
+          <div class="capability-item">
+            <div class="capability-img">
+              <img src="assets/img/capability-1.svg" alt="img" />
+            </div>
+            <h6>Bootstraped</h6>
+            <p>
+              외부 투자 없이 독립적으로 성장하며 매 해 300%의 매출을 달성해
+              나가고 있습니다.
+            </p>
+          </div>
+          <div class="capability-item">
+            <div class="capability-img">
+              <img src="assets/img/capability-2.svg" alt="img" />
+            </div>
+            <h6>Focused</h6>
+            <p>
+              좋은 제품을 만드는 것에만 집중할 수 있는 환경과 문화를
+              추구합니다.
+            </p>
+          </div>
+          <div class="capability-item">
+            <div class="capability-img">
+              <img src="assets/img/capability-3.svg" alt="img" />
+            </div>
+            <h6>Global</h6>
+            <p>
+              사용자 90% 이상이 해외 유저 이며 픽소 제품들은 10개의 언어로 전
+              세계에 서비스 하고 있습니다.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Capability -->
-    <section class="s-capability">
-      <div class="container">
-        <div class="capability-container">
-          <h2><span>We're PIXO</span></h2>
-          <div class="capability-cover">
-            <div class="capability-item">
-              <div class="capability-img">
-                <img src="assets/img/capability-1.svg" alt="img" />
-              </div>
-              <h6>Bootstraped</h6>
-              <p>
-                외부 투자 없이 독립적으로 성장하며 매 해 300%의 매출을 달성해
-                나가고 있습니다.
-              </p>
-            </div>
-            <div class="capability-item">
-              <div class="capability-img">
-                <img src="assets/img/capability-2.svg" alt="img" />
-              </div>
-              <h6>Focused</h6>
-              <p>
-                좋은 제품을 만드는 것에만 집중할 수 있는 환경과 문화를
-                추구합니다.
-              </p>
-            </div>
-            <div class="capability-item">
-              <div class="capability-img">
-                <img src="assets/img/capability-3.svg" alt="img" />
-              </div>
-              <h6>Global</h6>
-              <p>
-                사용자 90% 이상이 해외 유저 이며 픽소 제품들은 10개의 언어로 전
-                세계에 서비스 하고 있습니다.
-              </p>
-            </div>
-          </div>
+  <!-- s-we-hiring -->
+  <section class="s-we-hiring">
+    <div class="we-hiring-bg wow fadeInLeft"></div>
+    <div class="container wow fadeIn" data-wow-duration="1.6s">
+      <h2>We’re Hiring</h2>
+      <a href="http://bit.ly/pixoteam" target="_blank" class="btn">See more</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-logo-wrap">
+          <a href="index.html" class="logo-footer"><img src="assets/img/logo.svg" alt="logo" /></a>
         </div>
-      </div>
-    </section>
-
-    <!-- s-we-hiring -->
-    <section class="s-we-hiring">
-      <div class="we-hiring-bg wow fadeInLeft"></div>
-      <div class="container wow fadeIn" data-wow-duration="1.6s">
-        <h2>We’re Hiring</h2>
-        <a href="http://bit.ly/pixoteam" target="_blank" class="btn"
-          >See more</a
-        >
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <div class="footer-container">
-          <div class="footer-logo-wrap">
-            <a href="index.html" class="logo-footer"
-              ><img src="assets/img/logo.svg" alt="logo"
-            /></a>
-          </div>
-          <div class="footer-center">
-            <h6>We Make Apps For <br />Creativity + Productivity</h6>
-            <ul class="footer-soc">
-              <li>
-                <a href="https://www.facebook.com/pixodotco/" target="_blank">
-                  <svg
-                    width="22"
-                    height="21.818"
-                    viewBox="0 0 22 21.818"
-                    fill="#464646"
-                  >
-                    <g
-                      id="brandico-facebook-rect"
-                      transform="translate(0 -0.587)"
-                    >
-                      <g id="Icon" transform="translate(0 0.587)">
-                        <path
-                          id="Icon_Path"
-                          data-name="Icon Path"
-                          d="M4.017,0A3.992,3.992,0,0,0,0,3.984V17.835a3.992,3.992,0,0,0,4.017,3.984h7.569v-8.53H9.312V10.218h2.274V7.594c0-2.061,1.344-3.954,4.439-3.954a18.93,18.93,0,0,1,2.18.119l-.073,2.868s-.945-.009-1.977-.009c-1.116,0-1.3.51-1.3,1.357v2.243h3.361l-.146,3.071H14.861v8.53h3.122A3.992,3.992,0,0,0,22,17.835V3.984A3.992,3.992,0,0,0,17.983,0H4.017Z"
-                        />
-                      </g>
-                      <rect
-                        id="ViewBox"
-                        width="22"
-                        height="21.818"
-                        transform="translate(0 0.587)"
-                        fill="rgba(0,0,0,0)"
-                      />
+        <div class="footer-center">
+          <h6>We Make Apps For <br />Creativity + Productivity</h6>
+          <ul class="footer-soc">
+            <li>
+              <a href="https://www.facebook.com/pixodotco/" target="_blank">
+                <svg width="22" height="21.818" viewBox="0 0 22 21.818" fill="#464646">
+                  <g id="brandico-facebook-rect" transform="translate(0 -0.587)">
+                    <g id="Icon" transform="translate(0 0.587)">
+                      <path id="Icon_Path" data-name="Icon Path"
+                        d="M4.017,0A3.992,3.992,0,0,0,0,3.984V17.835a3.992,3.992,0,0,0,4.017,3.984h7.569v-8.53H9.312V10.218h2.274V7.594c0-2.061,1.344-3.954,4.439-3.954a18.93,18.93,0,0,1,2.18.119l-.073,2.868s-.945-.009-1.977-.009c-1.116,0-1.3.51-1.3,1.357v2.243h3.361l-.146,3.071H14.861v8.53h3.122A3.992,3.992,0,0,0,22,17.835V3.984A3.992,3.992,0,0,0,17.983,0H4.017Z" />
                     </g>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/pixo.co/" target="_blank">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="23.333"
-                    height="22.762"
-                    viewBox="0 0 23.333 22.762"
-                    fill="#464646"
-                  >
-                    <g id="Icon" transform="translate(-0.333 -0.325)">
-                      <path
-                        id="Icon_Shape"
-                        data-name="Icon Shape"
-                        d="M11.667,22.762c-3.764,0-4.247,0-5.752-.08A7.767,7.767,0,0,1,3.279,22.2a4.586,4.586,0,0,1-1.645-1.035A4.43,4.43,0,0,1,.572,19.575a7.629,7.629,0,0,1-.49-2.583C0,15.523,0,15.052,0,11.38S0,7.239.082,5.77A7.254,7.254,0,0,1,.572,3.2,4.614,4.614,0,0,1,3.279.558,7.767,7.767,0,0,1,5.915.08C7.42,0,7.9,0,11.667,0s4.246,0,5.752.08a7.767,7.767,0,0,1,2.636.478A4.614,4.614,0,0,1,22.762,3.2a7.254,7.254,0,0,1,.49,2.572c.082,1.469.082,1.94.082,5.611s0,4.143-.082,5.612a7.313,7.313,0,0,1-.49,2.583A4.461,4.461,0,0,1,21.7,21.169,4.586,4.586,0,0,1,20.055,22.2a7.767,7.767,0,0,1-2.636.478C15.913,22.762,15.429,22.762,11.667,22.762ZM8.1,3.016a6.819,6.819,0,0,0-2.111.4A4.156,4.156,0,0,0,4.5,4.348a4.028,4.028,0,0,0-1,1.49A6.079,6.079,0,0,0,3.1,7.9v6.965a6.079,6.079,0,0,0,.4,2.06,4.005,4.005,0,0,0,.957,1.445,4.142,4.142,0,0,0,1.528.978,6.819,6.819,0,0,0,2.111.4h7.141a6.829,6.829,0,0,0,2.111-.4,4.469,4.469,0,0,0,2.485-2.424,6.36,6.36,0,0,0,.455-2.048v-.012c.015-.4.008-.654-.006-1.07v-.087c-.016-.471-.038-1.117-.038-2.325V7.9a6.393,6.393,0,0,0-.409-2.06,3.968,3.968,0,0,0-.957-1.445,4.142,4.142,0,0,0-1.528-.978,6.829,6.829,0,0,0-2.111-.4Zm7.07,15.25h-7a5.076,5.076,0,0,1-1.552-.3,2.741,2.741,0,0,1-1.645-1.6,4.735,4.735,0,0,1-.3-1.571V7.967A4.73,4.73,0,0,1,4.911,6.4,2.75,2.75,0,0,1,6.557,4.848a4.769,4.769,0,0,1,1.61-.3h7.079a4.777,4.777,0,0,1,1.531.251,2.744,2.744,0,0,1,1.645,1.6V6.4a4.213,4.213,0,0,1,.3,1.571V14.8a4.445,4.445,0,0,1-.3,1.571,2.741,2.741,0,0,1-1.645,1.6A4.769,4.769,0,0,1,15.167,18.266ZM11.678,7.033a4.533,4.533,0,0,0-1.7.33A4.335,4.335,0,0,0,7.222,11.38a4.254,4.254,0,0,0,1.3,3.073,4.471,4.471,0,0,0,3.147,1.274h.012a4.447,4.447,0,0,0,4.114-2.676,4.256,4.256,0,0,0-.958-4.742A4.487,4.487,0,0,0,11.678,7.033ZM16.333,5.85a1.022,1.022,0,0,0,0,2.037,1.022,1.022,0,0,0,0-2.037ZM11.667,14.2a2.824,2.824,0,1,1,0-5.646,2.912,2.912,0,0,1,2.046.827,2.806,2.806,0,0,1,.848,2A2.862,2.862,0,0,1,11.667,14.2Z"
-                        transform="translate(0.333 0.325)"
-                      />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://medium.com/pixo-co/" target="_blank">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30px"
-                  height="30px"
-                  viewBox="0 -55 256 256"
-                  fill="#464646"
-                >
+                    <rect id="ViewBox" width="22" height="21.818" transform="translate(0 0.587)" fill="rgba(0,0,0,0)" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pixo.co/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.333" height="22.762" viewBox="0 0 23.333 22.762"
+                  fill="#464646">
+                  <g id="Icon" transform="translate(-0.333 -0.325)">
+                    <path id="Icon_Shape" data-name="Icon Shape"
+                      d="M11.667,22.762c-3.764,0-4.247,0-5.752-.08A7.767,7.767,0,0,1,3.279,22.2a4.586,4.586,0,0,1-1.645-1.035A4.43,4.43,0,0,1,.572,19.575a7.629,7.629,0,0,1-.49-2.583C0,15.523,0,15.052,0,11.38S0,7.239.082,5.77A7.254,7.254,0,0,1,.572,3.2,4.614,4.614,0,0,1,3.279.558,7.767,7.767,0,0,1,5.915.08C7.42,0,7.9,0,11.667,0s4.246,0,5.752.08a7.767,7.767,0,0,1,2.636.478A4.614,4.614,0,0,1,22.762,3.2a7.254,7.254,0,0,1,.49,2.572c.082,1.469.082,1.94.082,5.611s0,4.143-.082,5.612a7.313,7.313,0,0,1-.49,2.583A4.461,4.461,0,0,1,21.7,21.169,4.586,4.586,0,0,1,20.055,22.2a7.767,7.767,0,0,1-2.636.478C15.913,22.762,15.429,22.762,11.667,22.762ZM8.1,3.016a6.819,6.819,0,0,0-2.111.4A4.156,4.156,0,0,0,4.5,4.348a4.028,4.028,0,0,0-1,1.49A6.079,6.079,0,0,0,3.1,7.9v6.965a6.079,6.079,0,0,0,.4,2.06,4.005,4.005,0,0,0,.957,1.445,4.142,4.142,0,0,0,1.528.978,6.819,6.819,0,0,0,2.111.4h7.141a6.829,6.829,0,0,0,2.111-.4,4.469,4.469,0,0,0,2.485-2.424,6.36,6.36,0,0,0,.455-2.048v-.012c.015-.4.008-.654-.006-1.07v-.087c-.016-.471-.038-1.117-.038-2.325V7.9a6.393,6.393,0,0,0-.409-2.06,3.968,3.968,0,0,0-.957-1.445,4.142,4.142,0,0,0-1.528-.978,6.829,6.829,0,0,0-2.111-.4Zm7.07,15.25h-7a5.076,5.076,0,0,1-1.552-.3,2.741,2.741,0,0,1-1.645-1.6,4.735,4.735,0,0,1-.3-1.571V7.967A4.73,4.73,0,0,1,4.911,6.4,2.75,2.75,0,0,1,6.557,4.848a4.769,4.769,0,0,1,1.61-.3h7.079a4.777,4.777,0,0,1,1.531.251,2.744,2.744,0,0,1,1.645,1.6V6.4a4.213,4.213,0,0,1,.3,1.571V14.8a4.445,4.445,0,0,1-.3,1.571,2.741,2.741,0,0,1-1.645,1.6A4.769,4.769,0,0,1,15.167,18.266ZM11.678,7.033a4.533,4.533,0,0,0-1.7.33A4.335,4.335,0,0,0,7.222,11.38a4.254,4.254,0,0,0,1.3,3.073,4.471,4.471,0,0,0,3.147,1.274h.012a4.447,4.447,0,0,0,4.114-2.676,4.256,4.256,0,0,0-.958-4.742A4.487,4.487,0,0,0,11.678,7.033ZM16.333,5.85a1.022,1.022,0,0,0,0,2.037,1.022,1.022,0,0,0,0-2.037ZM11.667,14.2a2.824,2.824,0,1,1,0-5.646,2.912,2.912,0,0,1,2.046.827,2.806,2.806,0,0,1,.848,2A2.862,2.862,0,0,1,11.667,14.2Z"
+                      transform="translate(0.333 0.325)" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/pixo-co/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 -55 256 256"
+                  fill="#464646">
                   <g id="Icon">
-                    <path
-                      id="Icon_Path"
-                      data-name="Icon Shape"
+                    <path id="Icon_Path" data-name="Icon Shape"
                       d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z">
                     </path>
                   </g>
                 </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-right">
-            <p class="text">
-              <span>PIXO Inc.</span> <br />서울시 마포구 연남동 568-39 카라빌딩
-              4층 (03991)
-            </p>
-            <a href="mailto:contact@pixo.co" class="footer-email">
-              contact@pixo.co</a
-            >
-            <div class="copyright">@ PIXO 2019</div>
-          </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="text">
+            <span>PIXO Inc.</span> <br />서울시 마포구 연남동 568-39 카라빌딩
+            4층 (03991)
+          </p>
+          <a href="mailto:contact@pixo.co" class="footer-email">
+            contact@pixo.co</a>
+          <div class="copyright">@ PIXO 2019</div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!--================= TO TOP END =================-->
-    <!--=================== SCRIPT	===================-->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
-  </body>
+  <!--================= TO TOP END =================-->
+  <!--=================== SCRIPT	===================-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+</body>
+
 </html>
